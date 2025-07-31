@@ -1,0 +1,93 @@
+/* General Styling */
+QWidget {
+    background-color: #2E3440;
+    color: #D8DEE9;
+    font-family: Segoe UI, sans-serif;
+    font-size: 10pt;
+}
+
+/* GroupBox Styling */
+QGroupBox {
+    background-color: #3B4252;
+    border: 1px solid #4C566A;
+    border-radius: 5px;
+    margin-top: 1ex;
+    font-weight: bold;
+}
+QGroupBox::title {
+    subcontrol-origin: margin;
+    subcontrol-position: top center;
+    padding: 0 3px;
+    background-color: #3B4252;
+}
+
+/* Button Styling */
+QPushButton {
+    background-color: #5E81AC;
+    color: #ECEFF4;
+    border: none;
+    padding: 8px 16px;
+    border-radius: 4px;
+}
+QPushButton:hover {
+    background-color: #81A1C1;
+}
+QPushButton:pressed {
+    background-color: #4C566A;
+}
+
+/* Input Fields */
+QLineEdit, QSpinBox, QDoubleSpinBox, QDateEdit {
+    background-color: #4C566A;
+    border: 1px solid #3B4252;
+    border-radius: 4px;
+    padding: 5px;
+}
+QLineEdit:focus, QSpinBox:focus, QDoubleSpinBox:focus, QDateEdit:focus {
+    border: 1px solid #88C0D0;
+}
+
+/* Table and List Styling */
+QTableWidget, QListWidget {
+    background-color: #3B4252;
+    border: 1px solid #4C566A;
+    gridline-color: #4C566A;
+}
+QHeaderView::section {
+    background-color: #434C5E;
+    color: #ECEFF4;
+    padding: 4px;
+    border: 1px solid #4C566A;
+    font-weight: bold;
+}
+QTableWidget::item, QListWidget::item {
+    padding: 5px;
+}
+QTableWidget::item:selected, QListWidget::item:selected {
+    background-color: #5E81AC;
+    color: #ECEFF4;
+}
+
+/* ScrollBar Styling */
+QScrollBar:vertical {
+    border: none;
+    background: #3B4252;
+    width: 10px;
+    margin: 0px 0px 0px 0px;
+}
+QScrollBar::handle:vertical {
+    background: #5E81AC;
+    min-height: 20px;
+    border-radius: 5px;
+}
+QScrollBar:horizontal {
+    border: none;
+    background: #3B4252;
+    height: 10px;
+    margin: 0px 0px 0px 0px;
+}
+QScrollBar::handle:horizontal {
+    background: #5E81AC;
+    min-width: 20px;
+    border-radius: 5px;
+}
